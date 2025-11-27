@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f6f3; /* earth-50 */
+  --foreground: #1c1917; /* sand-900 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Scrollbar styling */
+* {
+  scrollbar-color: theme(colors.earth.400) theme(colors.earth.100);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: theme(colors.earth.100);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: theme(colors.earth.400);
+  border-radius: 8px;
+  border: 2px solid theme(colors.earth.100);
+}
+
+/* Base typography */
+@layer base {
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl font-serif tracking-tight;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl font-serif;
+  }
+  p {
+    @apply text-base leading-relaxed text-sand-700;
+  }
+  a {
+    @apply text-terracotta-600 hover:text-terracotta-700 transition-colors;
+  }
+}
+
+

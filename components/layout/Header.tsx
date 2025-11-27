@@ -1,0 +1,48 @@
+'use client';
+
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { siteName } from '@/lib/constants';
+import Navigation from './Navigation';
+import MobileMenu from './MobileMenu';
+import { PawPrint } from 'lucide-react';
+import Button from '@/components/ui/Button';
+
+export default function Header() {
+  const [solid, setSolid] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setSolid(window.scrollY > 10);
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <header
+      className={`sticky top-0 z-50 transition-colors ${
+        solid ? 'bg-earth-50/95 backdrop-blur border-b border-sand-200' : 'bg-transparent'
+      }`}
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 font-serif text-xl">
+          <PawPrint className="h-6 w-6 text-terracotta-600" />
+          <span>{siteName}</span>
+        </Link>
+        <div className="hidden md:block">
+          <Navigation />
+        </div>
+        <div className="hidden md:block">
+          <Link href="/booking">
+            <Button variant="primary" size="md">Book Now</Button>
+          </Link>
+        </div>
+        <div className="md:hidden">
+          <MobileMenu />
+        </div>
+      </div>
+    </header>
+  );
+}
+
+
