@@ -10,7 +10,7 @@ export default function Hero() {
     <section className="relative h-[88vh] min-h-[560px] w-full overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1600585154340-1e4ce9a0a1d5"
+          src="/images/hero/main-hero.svg"
           alt="Farmhouse exterior with natural surroundings"
           fill
           className="object-cover"

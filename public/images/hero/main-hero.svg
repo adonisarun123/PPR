@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bcd4c1"/>
+      <stop offset="60%" stop-color="#e9e2d6"/>
+      <stop offset="100%" stop-color="#f8f6f3"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6c28b"/>
+      <stop offset="100%" stop-color="#dc6c4d"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a5b594"/>
+      <stop offset="100%" stop-color="#6a8055"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3e8dd"/>
+      <stop offset="100%" stop-color="#ddd3c3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="1250" cy="180" r="110" fill="url(#sun)" opacity="0.8"/>
+
+  <!-- distant hills -->
+  <path d="M0,520 C220,440 420,480 620,500 C840,520 1060,450 1600,520 L1600,900 L0,900 Z" fill="url(#hill)" opacity="0.35"/>
+  <path d="M0,560 C240,500 480,560 720,570 C980,585 1280,520 1600,580 L1600,900 L0,900 Z" fill="url(#hill)" opacity="0.5"/>
+
+  <!-- fields -->
+  <path d="M0,640 C300,600 520,660 760,680 C1040,705 1280,660 1600,700 L1600,900 L0,900 Z" fill="url(#field)"/>
+
+  <!-- simple farmhouse silhouette -->
+  <g transform="translate(520,480)" opacity="0.9">
+    <rect x="-10" y="40" width="220" height="120" rx="6" fill="#fff9f2" stroke="#c7b69e" stroke-width="4"/>
+    <polygon points="0,40 100,-20 200,40" fill="#b39a7b" />
+    <rect x="20" y="100" width="50" height="60" fill="#ede8e0" stroke="#c7b69e" stroke-width="3"/>
+    <rect x="100" y="80" width="80" height="40" fill="#ede8e0" stroke="#c7b69e" stroke-width="3"/>
+  </g>
+
+  <!-- trees -->
+  <g opacity="0.8">
+    <rect x="400" y="560" width="10" height="70" fill="#715a45"/>
+    <circle cx="405" cy="540" r="28" fill="#6a8055"/>
+    <circle cx="390" cy="555" r="18" fill="#849a6f"/>
+    <circle cx="420" cy="555" r="18" fill="#849a6f"/>
+
+    <rect x="890" y="560" width="10" height="70" fill="#715a45"/>
+    <circle cx="895" cy="540" r="30" fill="#6a8055"/>
+    <circle cx="880" cy="556" r="20" fill="#849a6f"/>
+    <circle cx="910" cy="556" r="20" fill="#849a6f"/>
+  </g>
+
+  <!-- subtle foreground texture lines -->
+  <g stroke="#ddd3c3" stroke-width="2" opacity="0.7">
+    <path d="M0,760 C200,740 400,760 600,770 C800,780 1000,770 1200,780 C1400,790 1500,790 1600,780"/>
+    <path d="M0,800 C220,780 420,800 620,810 C840,820 1060,810 1600,810"/>
+  </g>
+</svg>
+
+
