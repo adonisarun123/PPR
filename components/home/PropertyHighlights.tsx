@@ -1,6 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/Button';
+import Image from 'next/image';
 
 const sections = [
   {
@@ -11,6 +12,8 @@ const sections = [
       'Earth-cooled interiors for comfort',
       'Warm, inviting communal spaces',
     ],
+    image:
+      'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
   },
   {
     title: 'Dual Swimming Pools',
@@ -20,6 +23,8 @@ const sections = [
       'Natural earthen pool for humans',
       'Chemical-free, eco-friendly filtration',
     ],
+    image:
+      'https://images.unsplash.com/photo-1505764706515-aa95265c5abc',
   },
   {
     title: 'Organic Farm Experience',
@@ -29,6 +34,8 @@ const sections = [
       'Hands-on farm activities',
       'Sustainable growing practices',
     ],
+    image:
+      'https://images.unsplash.com/photo-1501004318641-b39e6451bec6',
   },
 ];
 
@@ -42,7 +49,15 @@ export default function PropertyHighlights() {
             className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center"
           >
             <div className={idx % 2 === 1 ? 'md:order-2' : ''}>
-              <div className="aspect-[16/10] w-full rounded-xl bg-gradient-to-br from-sand-100 to-earth-100" />
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl">
+                <Image
+                  src={s.image}
+                  alt={s.title}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                />
+              </div>
             </div>
             <div className="space-y-3">
               <h3 className="text-2xl font-serif">{s.title}</h3>

@@ -2,6 +2,7 @@
 
 import { Bath, Dog, Heart, Home, PawPrint, Stethoscope } from 'lucide-react';
 import Button from '@/components/ui/Button';
+import Image from 'next/image';
 
 const amenities = [
   { icon: PawPrint, title: 'Dedicated Swimming Pool' },
@@ -19,6 +20,15 @@ export default function PetFriendlySection() {
       <p className="mt-2 text-center text-sand-700 max-w-2xl mx-auto">
         Thoughtfully designed spaces and services so your companions enjoy as much as you do.
       </p>
+      <div className="mt-6 relative aspect-[16/7] w-full overflow-hidden rounded-xl">
+        <Image
+          src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b"
+          alt="Happy dog playing on lawn"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+      </div>
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {amenities.map((a) => (
           <div key={a.title} className="rounded-xl border border-sand-200 bg-white p-5">

@@ -1,6 +1,7 @@
 'use client';
 
 import { Droplets, Leaf, Recycle, Sun } from 'lucide-react';
+import Image from 'next/image';
 
 const metrics = [
   { label: 'Solar Powered', value: '100%', icon: Sun },
@@ -13,7 +14,15 @@ export default function SustainabilitySection() {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="aspect-[4/3] rounded-xl bg-gradient-to-br from-sage-100 to-earth-100" />
+        <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+          <Image
+            src="https://images.unsplash.com/photo-1492496913980-501348b61469"
+            alt="Sustainable architecture and natural surroundings"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+          />
+        </div>
         <div>
           <h2 className="font-serif">Rooted in Sustainability</h2>
           <p className="mt-3 text-sand-700">

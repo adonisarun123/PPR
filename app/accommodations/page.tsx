@@ -3,10 +3,38 @@ import Button from '@/components/ui/Button';
 import JsonLd from '@/components/shared/JsonLd';
 
 const rooms = [
-  { title: 'Garden Villa', description: 'Calm, spacious villa overlooking greenery.', priceFrom: 8000, occupancy: 2, bed: 'Queen' },
-  { title: 'Farmhouse Suite', description: 'Earth-cooled suite with handcrafted details.', priceFrom: 10000, occupancy: 3, bed: 'King' },
-  { title: 'Pet-Friendly Cottage', description: 'Comfortable cottage designed for pets.', priceFrom: 9000, occupancy: 2, bed: 'Queen' },
-  { title: 'Family Lodge', description: 'Roomy lodge perfect for families.', priceFrom: 12000, occupancy: 4, bed: '2x Double' },
+  {
+    title: 'Garden Villa',
+    description: 'Calm, spacious villa overlooking greenery.',
+    priceFrom: 8000,
+    occupancy: 2,
+    bed: 'Queen',
+    image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
+  },
+  {
+    title: 'Farmhouse Suite',
+    description: 'Earth-cooled suite with handcrafted details.',
+    priceFrom: 10000,
+    occupancy: 3,
+    bed: 'King',
+    image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
+  },
+  {
+    title: 'Pet-Friendly Cottage',
+    description: 'Comfortable cottage designed for pets.',
+    priceFrom: 9000,
+    occupancy: 2,
+    bed: 'Queen',
+    image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',
+  },
+  {
+    title: 'Family Lodge',
+    description: 'Roomy lodge perfect for families.',
+    priceFrom: 12000,
+    occupancy: 4,
+    bed: '2x Double',
+    image: 'https://images.unsplash.com/photo-1499696010181-8f1a1c1d7b3b',
+  },
 ];
 
 export const metadata = {
@@ -67,7 +95,7 @@ export default function AccommodationsPage() {
       </p>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
         {rooms.map((r) => (
-          <Card key={r.title} title={r.title} description={r.description}>
+          <Card key={r.title} image={r.image} title={r.title} description={r.description}>
             <Button variant="outline">Book Now</Button>
           </Card>
         ))}

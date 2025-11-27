@@ -3,11 +3,22 @@
 import Button from '@/components/ui/Button';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="relative h-[88vh] min-h-[560px] w-full overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-earth-200 to-earth-50" />
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1600585154340-1e4ce9a0a1d5"
+          alt="Farmhouse exterior with natural surroundings"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-earth-50" />
+      </div>
       <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 text-center">
         <motion.h1
           className="font-serif"
