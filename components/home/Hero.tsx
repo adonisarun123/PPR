@@ -10,8 +10,8 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/main-hero.svg"
-          alt="100 acre farm retreat"
+          src="/images/hero/modern-hero.png"
+          alt="Modern eco-luxury farm retreat with golden retriever"
           fill
           className="object-cover"
           priority
