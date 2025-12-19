@@ -53,9 +53,13 @@ export default function Footer() {
             <ul className="space-y-4 text-wood-200/80">
               <li><Link href="/about" className="hover:text-terracotta-400 transition-colors">Our Story</Link></li>
               <li><Link href="/accommodations" className="hover:text-terracotta-400 transition-colors">Accommodations</Link></li>
-              <li><Link href="/facilities" className="hover:text-terracotta-400 transition-colors">Experiences</Link></li>
+              <li><Link href="/pet-friendly" className="hover:text-terracotta-400 transition-colors">Pet-Friendly</Link></li>
+              <li><Link href="/organic-farm" className="hover:text-terracotta-400 transition-colors">Organic Farm</Link></li>
+              <li><Link href="/facilities" className="hover:text-terracotta-400 transition-colors">Facilities</Link></li>
+              <li><Link href="/experiences" className="hover:text-terracotta-400 transition-colors">Experiences</Link></li>
               <li><Link href="/sustainability" className="hover:text-terracotta-400 transition-colors">Sustainability</Link></li>
               <li><Link href="/gallery" className="hover:text-terracotta-400 transition-colors">Gallery</Link></li>
+              <li><Link href="/reviews" className="hover:text-terracotta-400 transition-colors">Reviews</Link></li>
             </ul>
           </div>
 

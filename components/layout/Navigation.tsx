@@ -1,12 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { navLinks } from '@/lib/constants';
+import { headerLinks } from '@/lib/constants';
 
 export default function Navigation() {
   return (
     <nav className="flex items-center gap-6 text-sm">
-      {navLinks.map((link) => (
+      {headerLinks.map((link) => (
         <Link
           key={link.href}
           href={link.href}

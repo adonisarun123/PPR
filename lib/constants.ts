@@ -13,4 +13,11 @@ export const navLinks = [
   { href: '/contact', label: 'Contact' },
 ];
 
+export const headerLinks = [
+  { href: '/about', label: 'About' },
+  { href: '/accommodations', label: 'Accommodations' },
+  { href: '/experiences', label: 'Experiences' },
+  { href: '/contact', label: 'Contact' },
+];
+
 

@@ -2,6 +2,7 @@
 
 import Button from '@/components/ui/Button';
 import { motion } from 'framer-motion';
+import { Dog } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -82,9 +83,8 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
       >
-        <div className="flex items-center gap-4 text-white/70">
-          <div className="h-[1px] w-12 bg-white/50"></div>
-          <span className="text-xs uppercase tracking-[0.2em]">Scroll to Discover</span>
+        <div className="flex flex-col items-center gap-2 text-white/80">
+          <Dog className="h-8 w-8 animate-bounce" />
         </div>
       </motion.div>
     </section>
