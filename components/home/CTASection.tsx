@@ -5,24 +5,25 @@ import Button from '@/components/ui/Button';
 export default function CTASection() {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 mt-20">
-      <div className="relative overflow-hidden rounded-organic-lg bg-wood-900 px-6 py-20 text-center text-white shadow-2xl">
-        {/* Background Texture/Image */}
-        <div className="absolute inset-0 opacity-40 mix-blend-overlay" style={{ backgroundImage: "url('/images/textures/wood.png')" }}></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-wood-900/90 via-wood-800/80 to-wood-900/90"></div>
+      <div className="relative overflow-hidden rounded-3xl bg-wood-900 px-6 py-24 text-center text-white shadow-2xl">
+        <div className="absolute inset-0 bg-wood-900"></div>
+        {/* Modern gradient accent */}
+        <div className="absolute top-0 right-0 -mt-20 -mr-20 h-96 w-96 rounded-full bg-terracotta-600/20 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 -mb-20 -ml-20 h-96 w-96 rounded-full bg-terracotta-600/10 blur-3xl"></div>
 
-        <div className="relative z-10 mx-auto max-w-2xl">
-          <h2 className="font-serif text-4xl md:text-5xl mb-4 text-wood-50">Ready for Your Eco-Escape?</h2>
-          <p className="mt-4 text-wood-200 text-lg md:text-xl max-w-xl mx-auto">
-            Book your sustainable retreat today and reconnect with nature in its purest form.
+        <div className="relative z-10 mx-auto max-w-3xl">
+          <h2 className="font-serif text-5xl md:text-6xl mb-6 text-white tracking-tight">Ready to Escape the Ordinary?</h2>
+          <p className="mb-10 text-wood-100 text-xl font-light leading-relaxed max-w-2xl mx-auto">
+            Book your sustainable retreat today and give your pets the holiday they deserve.
           </p>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <a href="/booking">
-              <Button size="lg" className="bg-terracotta-600 hover:bg-terracotta-700 text-white min-w-[160px] shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
-                Book Now
+              <Button size="lg" className="h-14 px-10 rounded-full bg-white text-wood-900 hover:bg-wood-50 text-lg font-medium shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all">
+                Book Your Stay
               </Button>
             </a>
             <a href="/contact">
-              <Button variant="outline" size="lg" className="border-wood-400 text-wood-100 hover:bg-wood-800 hover:text-white min-w-[160px]">
+              <Button variant="outline" size="lg" className="h-14 px-10 rounded-full border-wood-600 text-white hover:bg-wood-800/50 hover:border-wood-500 text-lg backdrop-blur-sm">
                 Contact Us
               </Button>
             </a>

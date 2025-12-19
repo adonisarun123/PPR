@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #f7f3ef; /* wood-50 */
-  --foreground: #23180f; /* wood-900 */
+  --background: #ffffff;
+  /* Modern White */
+  --foreground: #1c1917;
+  /* sand-900 */
 }
 
 html {
@@ -18,6 +20,7 @@ body {
   position: relative;
 }
 
+/* Subtle texture only - much reduced opacity */
 body::before {
   content: "";
   position: fixed;
@@ -25,7 +28,7 @@ body::before {
   width: 100%;
   height: 100%;
   background-image: theme('backgroundImage.grain');
-  opacity: 0.03;
+  opacity: 0.015;
   pointer-events: none;
   z-index: 100;
   mix-blend-mode: multiply;
@@ -57,18 +60,20 @@ body::before {
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight;
   }
+
   h2 {
     @apply text-3xl md:text-4xl font-serif tracking-tight;
   }
+
   h3 {
     @apply text-2xl md:text-3xl font-serif;
   }
+
   p {
     @apply text-base leading-relaxed text-sand-700;
   }
+
   a {
     @apply text-terracotta-600 hover:text-terracotta-700 transition-colors;
   }
 }
-
-

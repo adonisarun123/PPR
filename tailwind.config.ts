@@ -102,10 +102,11 @@ const config: Config = {
         'wood-pattern': "url('/images/textures/wood.png')",
       },
       borderRadius: {
-        'organic-sm': '0.25rem 0.5rem 0.25rem 0.5rem',
-        'organic-md': '0.5rem 1rem 0.5rem 1rem',
-        'organic-lg': '1rem 2rem 1rem 2rem',
-        'organic-full': '45% 55% 40% 60% / 55% 45% 60% 40%',
+        'lg': '0.5rem',
+        'xl': '0.75rem',
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+        '4xl': '2rem',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',
