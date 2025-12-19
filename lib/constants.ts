@@ -3,7 +3,6 @@ export const siteName = 'Paws Pannai Retreat';
 export const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/accommodations', label: 'Accommodations' },
   { href: '/facilities', label: 'Facilities' },
   { href: '/organic-farm', label: 'Organic Farm' },
   { href: '/pet-friendly', label: 'Pet-Friendly' },
@@ -16,7 +15,6 @@ export const navLinks = [
 export const headerLinks = [
   { href: '/experiences', label: 'Play Areas' },
   { href: '/about', label: 'About' },
-  { href: '/accommodations', label: 'Accommodations' },
   { href: '/contact', label: 'Contact' },
 ];
 

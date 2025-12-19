@@ -6,12 +6,6 @@ import Image from 'next/image';
 
 const highlights = [
   {
-    title: 'Rustic Luxury Cottages',
-    description: 'Experience the charm of traditional architecture blended with modern comforts. Our earth-built cottages offer natural cooling and a serene atmosphere.',
-    image: 'https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=2070',
-    points: ['Sustainable Earth Blocks', 'Private Verandahs', 'Natural Ventilation', 'Pet-Friendly Interiors']
-  },
-  {
     title: '100 Acres of Exploration',
     description: 'Unleash your spirit of adventure. Roam freely across our expansive farmlands, orchards, and specially designed pet agility parks.',
     image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2832',

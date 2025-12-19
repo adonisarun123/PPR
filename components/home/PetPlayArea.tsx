@@ -5,12 +5,12 @@ import Button from '@/components/ui/Button';
 import { Check } from 'lucide-react';
 
 const activities = [
-    'Professional Agility Course',
-    'Leash-Free Zoomie Zones',
+    'Reused Tyres Agility Course',
+    'Miyawaki Forest Trails',
+    'Green Acre of Contentment',
     'Pet-Safe Swimming Pool',
     'Filtered Water Stations',
-    'Shaded Resting Pods',
-    'Trainer-Led Group Play'
+    'Shaded Resting Pods'
 ];
 
 export default function PetPlayArea() {

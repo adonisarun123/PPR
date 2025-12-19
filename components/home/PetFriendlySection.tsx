@@ -1,13 +1,12 @@
 'use client';
 
-import { Bath, Dog, Heart, Home, PawPrint, Stethoscope } from 'lucide-react';
+import { Bath, Dog, Heart, PawPrint, Stethoscope } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
 const amenities = [
   { icon: PawPrint, title: 'Dedicated Swimming Pool' },
   { icon: Dog, title: 'Spacious Play Areas' },
-  { icon: Home, title: 'Pet-Friendly Accommodations' },
   { icon: Bath, title: 'Grooming Services' },
   { icon: Stethoscope, title: 'Veterinary On-Call' },
   { icon: Heart, title: 'Pet Activities & Toys' },
