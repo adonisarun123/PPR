@@ -7,6 +7,7 @@ import TestimonialSection from '@/components/home/TestimonialSection';
 import CTASection from '@/components/home/CTASection';
 import FadeIn from '@/components/animations/FadeIn';
 import JsonLd from '@/components/shared/JsonLd';
+import SectionDivider from '@/components/ui/SectionDivider';
 
 export const metadata = {
   title: 'Paws Pannai Retreat | Sustainable Pet-Friendly Eco-Resort',
@@ -53,27 +54,51 @@ export default function HomePage() {
   };
 
   return (
-    <div>
+    <div className="bg-wood-50">
       <JsonLd data={webSiteJsonLd} />
       <JsonLd data={webPageJsonLd} />
-      <Hero />
 
-      <div className="space-y-20 md:space-y-28">
+      {/* Hero with transition to Wood-50 */}
+      <div className="relative">
+        <Hero />
+        <SectionDivider variant="bottom" className="text-wood-50 z-20" />
+      </div>
+
+      <div className="space-y-0">
         <FadeIn>
           <Features />
         </FadeIn>
-        <FadeIn>
-          <PropertyHighlights />
-        </FadeIn>
-        <FadeIn>
-          <PetFriendlySection />
-        </FadeIn>
-        <FadeIn>
-          <SustainabilitySection />
-        </FadeIn>
-        <FadeIn>
-          <TestimonialSection />
-        </FadeIn>
+
+        <div className="my-20">
+          <FadeIn>
+            <PropertyHighlights />
+          </FadeIn>
+        </div>
+
+        <section className="relative py-20 bg-stone-100">
+          <SectionDivider variant="top" className="text-wood-50" />
+          <FadeIn>
+            <div className="container mx-auto px-4">
+              <PetFriendlySection />
+            </div>
+          </FadeIn>
+          <SectionDivider variant="bottom" className="text-wood-50" />
+        </section>
+
+        <section className="py-20">
+          <FadeIn>
+            <SustainabilitySection />
+          </FadeIn>
+        </section>
+
+        <section className="relative bg-foliage-900 py-24 text-wood-50">
+          <SectionDivider variant="top" className="text-wood-50" />
+          <FadeIn>
+            <TestimonialSection />
+          </FadeIn>
+          <SectionDivider variant="bottom" className="text-wood-50" />
+        </section>
+
         <FadeIn>
           <CTASection />
         </FadeIn>

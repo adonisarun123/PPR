@@ -10,7 +10,7 @@ export default function Navigation() {
         <Link
           key={link.href}
           href={link.href}
-          className="text-sand-700 hover:text-terracotta-700 transition-colors"
+          className="font-serif tracking-wide text-wood-900 hover:text-terracotta-600 transition-colors"
         >
           {link.label}
         </Link>

@@ -38,16 +38,27 @@ export default function ExperiencesPage() {
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-      <JsonLd data={jsonLd} />
-      <h1>Experiences</h1>
-      <p className="mt-2 text-sand-700">
-        Curated activities for relaxation, learning, and connection with nature.
-      </p>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        {items.map((x) => (
-          <Card key={x.title} title={x.title} description={x.description} />
-        ))}
+    <div className="bg-wood-50 min-h-screen">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+        <JsonLd data={jsonLd} />
+
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h1 className="font-serif text-5xl text-wood-900 mb-6">Experiences</h1>
+          <div className="h-1 w-24 bg-terracotta-500 mx-auto rounded-full mb-8"></div>
+          <p className="text-xl text-wood-700 leading-relaxed">
+            Curated activities for relaxation, learning, and deep connection with nature and your pets.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {items.map((x) => (
+            <Card key={x.title} title={x.title} description={x.description}>
+              <div className="pt-2">
+                <span className="text-sm font-medium text-terracotta-600 uppercase tracking-wider">Explore</span>
+              </div>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );

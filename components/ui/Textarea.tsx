@@ -28,10 +28,10 @@ export default function Textarea({
       <textarea
         id={inputId}
         className={cn(
-          'w-full rounded-md border px-3 py-2 outline-none transition min-h-[120px]',
+          'w-full rounded-md border bg-wood-50/50 px-3 py-2 outline-none transition min-h-[120px] text-wood-900 placeholder:text-wood-400',
           error
             ? 'border-red-400 focus:ring-2 focus:ring-red-300'
-            : 'border-sand-300 focus:ring-2 focus:ring-terracotta-200',
+            : 'border-wood-300 focus:border-terracotta-500 focus:ring-1 focus:ring-terracotta-500',
           className,
         )}
         {...props}

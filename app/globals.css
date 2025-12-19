@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8f6f3; /* earth-50 */
-  --foreground: #1c1917; /* sand-900 */
+  --background: #f7f3ef; /* wood-50 */
+  --foreground: #23180f; /* wood-900 */
 }
 
 html {
@@ -15,6 +15,20 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-feature-settings: "rlig" 1, "calt" 1;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: theme('backgroundImage.grain');
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 100;
+  mix-blend-mode: multiply;
 }
 
 /* Scrollbar styling */

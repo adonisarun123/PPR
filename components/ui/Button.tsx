@@ -30,12 +30,12 @@ export default function Button({
 
   const variants: Record<NonNullable<ButtonProps['variant']>, string> = {
     primary:
-      'bg-terracotta-600 text-white hover:bg-terracotta-700 focus-visible:ring-terracotta-400',
+      'bg-terracotta-600 text-white hover:bg-terracotta-700 focus-visible:ring-terracotta-400 shadow-md hover:shadow-lg hover:-translate-y-0.5',
     secondary:
-      'bg-sage-600 text-white hover:bg-sage-700 focus-visible:ring-sage-400',
+      'bg-foliage-600 text-white hover:bg-foliage-700 focus-visible:ring-foliage-400 shadow-md hover:shadow-lg hover:-translate-y-0.5',
     outline:
-      'border border-sand-300 text-sand-800 hover:bg-sand-100 focus-visible:ring-sand-400',
-    ghost: 'text-sand-800 hover:bg-sand-100 focus-visible:ring-sand-400',
+      'border border-wood-300 text-wood-800 hover:bg-wood-100 focus-visible:ring-wood-400',
+    ghost: 'text-wood-800 hover:bg-wood-100 focus-visible:ring-wood-400',
   };
 
   const sizes: Record<NonNullable<ButtonProps['size']>, string> = {

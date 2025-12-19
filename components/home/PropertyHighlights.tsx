@@ -41,33 +41,45 @@ const sections = [
 
 export default function PropertyHighlights() {
   return (
-    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className="space-y-14">
+    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 bg-wood-50">
+      <div className="space-y-24">
         {sections.map((s, idx) => (
           <div
             key={s.title}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center"
+            className={`flex flex-col md:flex-row gap-12 lg:gap-20 items-center ${idx % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
           >
-            <div className={idx % 2 === 1 ? 'md:order-2' : ''}>
-              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl">
+            <div className="w-full md:w-1/2">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-organic-md shadow-xl ring-8 ring-wood-100 ring-offset-2 ring-offset-wood-50">
                 <Image
                   src={s.image}
                   alt={s.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
                   sizes="(min-width: 1024px) 50vw, 100vw"
                 />
               </div>
+              {/* Decor element */}
+              <div className="absolute -z-10 top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 bg-wood-200/30 rounded-full blur-3xl transform scale-110"></div>
             </div>
-            <div className="space-y-3">
-              <h3 className="text-2xl font-serif">{s.title}</h3>
-              <p className="text-sand-700">{s.subtitle}</p>
-              <ul className="list-disc pl-5 space-y-1 text-sand-700">
+
+            <div className="w-full md:w-1/2 space-y-6">
+              <div>
+                <span className="text-terracotta-600 font-serif tracking-widest text-sm uppercase mb-2 block">{s.subtitle}</span>
+                <h3 className="text-3xl md:text-4xl font-serif text-wood-900">{s.title}</h3>
+              </div>
+
+              <ul className="space-y-4">
                 {s.points.map((p) => (
-                  <li key={p}>{p}</li>
+                  <li key={p} className="flex items-start gap-3 text-wood-700 leading-relaxed">
+                    <span className="mt-1.5 h-2 w-2 rounded-full bg-foliage-500 shrink-0" />
+                    <span>{p}</span>
+                  </li>
                 ))}
               </ul>
-              <Button variant="outline" className="mt-3">Learn More</Button>
+
+              <Button variant="outline" className="mt-6 border-wood-400 text-wood-800 hover:bg-wood-100">
+                Explore More
+              </Button>
             </div>
           </div>
         ))}
