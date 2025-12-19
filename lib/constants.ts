@@ -14,9 +14,9 @@ export const navLinks = [
 ];
 
 export const headerLinks = [
+  { href: '/experiences', label: 'Play Areas' },
   { href: '/about', label: 'About' },
   { href: '/accommodations', label: 'Accommodations' },
-  { href: '/experiences', label: 'Experiences' },
   { href: '/contact', label: 'Contact' },
 ];
 

@@ -43,8 +43,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            Untamed Nature. <br />
-            <span className="text-terracotta-400">Unmatched Comfort.</span>
+            Unlimited Play. <br />
+            <span className="text-terracotta-400">Unbound Freedom.</span>
           </motion.h1>
 
           <motion.p
@@ -53,7 +53,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Reconnect with the wild in a sustainable sanctuary designed for you and your pets. Experience the ultimate freedom of space.
+            The ultimate playground for your pet. 100 acres of off-leash zones, agility parks, and swimming ponds.
           </motion.p>
 
           <motion.div
@@ -64,12 +64,12 @@ export default function Hero() {
           >
             <a href="/booking">
               <Button size="lg" className="bg-terracotta-600 hover:bg-terracotta-700 text-white border-0 rounded-full px-10 h-14 text-lg shadow-2xl hover:-translate-y-1 transition-transform">
-                Book Your Escape
+                Book Day Pass
               </Button>
             </a>
             <a href="/experiences">
               <Button variant="outline" size="lg" className="border-white/40 text-white hover:bg-white hover:text-wood-900 rounded-full px-10 h-14 text-lg backdrop-blur-sm transition-all hover:border-white">
-                Explore Activities
+                Explore Play Zones
               </Button>
             </a>
           </motion.div>

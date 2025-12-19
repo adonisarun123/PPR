@@ -35,7 +35,7 @@ export default function Header() {
         </div>
         <div className="hidden md:block">
           <Link href="/booking">
-            <Button variant="primary" size="md">Book Now</Button>
+            <Button variant="primary" size="md">Book Activities</Button>
           </Link>
         </div>
         <div className="md:hidden">

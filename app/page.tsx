@@ -1,5 +1,6 @@
 import Hero from '@/components/home/Hero';
 import Features from '@/components/home/Features';
+import PetPlayArea from '@/components/home/PetPlayArea';
 import PropertyHighlights from '@/components/home/PropertyHighlights';
 import PetFriendlySection from '@/components/home/PetFriendlySection';
 import SustainabilitySection from '@/components/home/SustainabilitySection';
@@ -54,26 +55,32 @@ export default function HomePage() {
   };
 
   return (
-    <div className="bg-wood-50">
+    <div className="bg-white">
       <JsonLd data={webSiteJsonLd} />
       <JsonLd data={webPageJsonLd} />
 
-      {/* Hero with transition to Wood-50 */}
+      {/* Hero with transition */}
       <div className="relative">
         <Hero />
-        <SectionDivider variant="bottom" className="text-wood-50 z-20" />
       </div>
 
       <div className="space-y-0">
+        {/* Activity First Design */}
         <FadeIn>
-          <Features />
+          <PetPlayArea />
         </FadeIn>
 
-        <div className="my-20">
+        <section className="py-20 bg-stone-50/50">
+          <FadeIn>
+            <Features />
+          </FadeIn>
+        </section>
+
+        <section className="my-20">
           <FadeIn>
             <PropertyHighlights />
           </FadeIn>
-        </div>
+        </section>
 
         <section className="relative py-20 bg-stone-100">
           <SectionDivider variant="top" className="text-wood-50" />
