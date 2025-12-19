@@ -1,8 +1,6 @@
-type JsonLdProps = {
-  data: Record<string, any>;
-};
 
-export default function JsonLd({ data }: JsonLdProps) {
+
+export default function JsonLd({ data }: { data: Record<string, unknown> }) {
   const json = JSON.stringify(data);
   return (
     <script

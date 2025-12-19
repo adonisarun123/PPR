@@ -74,10 +74,12 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ ok: true, reference, total, nights });
-  } catch (err: any) {
-    const message = err?.message || 'Invalid request';
-    return NextResponse.json({ ok: false, error: message }, { status: 400 });
+  } catch (error: unknown) {
+    console.error('Booking error:', error);
+    return NextResponse.json(
+      { error: 'Failed to process booking' },
+      { status: 500 }
+    );
   }
 }
-
 

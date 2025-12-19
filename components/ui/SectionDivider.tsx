@@ -5,7 +5,7 @@ interface SectionDividerProps {
     className?: string;
 }
 
-export default function SectionDivider({ variant = 'bottom', className = '' }: SectionDividerProps) {
+export default function SectionDivider({ variant = 'bottom' }: SectionDividerProps) {
     if (variant === 'top') return null; // Remove top dividers for cleaner look
 
     // Simple modern diagonal or straight separator if needed, or just null for whitespace

@@ -34,9 +34,9 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="rounded-organic-md border border-wood-200 bg-wood-100/50 p-10 hover:shadow-xl transition-all duration-300 group">
             <h3 className="font-serif text-3xl text-wood-900 mb-4 group-hover:text-terracotta-700 transition-colors">Vision</h3>
-            <p className="text-lg text-wood-700 leading-relaxed">
-              An eco-retreat where humans and pets reconnect with nature in comfort and care.
-              We envision a world where luxury doesn't cost the earth.
+            <p className="text-lg text-wood-900/80 leading-relaxed mb-6">
+              Founded in 2024, Paws Pannai started with a simple dream: to create a sanctuary where people and pets could experience nature&apos;s healing touch together.
+              We envision a world where luxury doesn&apos;t cost the earth.
             </p>
           </div>
           <div className="rounded-organic-md border border-wood-200 bg-wood-100/50 p-10 hover:shadow-xl transition-all duration-300 group">

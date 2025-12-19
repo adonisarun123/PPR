@@ -42,10 +42,11 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ ok: true });
-  } catch (err: any) {
-    const message = err?.message || 'Invalid request';
-    return NextResponse.json({ ok: false, error: message }, { status: 400 });
+  } catch (error: unknown) {
+    console.error('Contact form error:', error);
+    return NextResponse.json(
+      { error: 'Failed to send message' },
+      { status: 500 }
+    );
   }
 }
-
-

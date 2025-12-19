@@ -2,19 +2,7 @@
 
 import Image from 'next/image';
 
-  },
-{
-  title: 'Organic Farm Experience',
-    subtitle: 'Farm-to-Table Living',
-      points: [
-        'Seasonal, fresh produce',
-        'Hands-on farm activities',
-        'Sustainable growing practices',
-      ],
-        image:
-  'https://images.unsplash.com/photo-1501004318641-b39e6451bec6',
-  },
-];
+
 
 const highlights = [
   {

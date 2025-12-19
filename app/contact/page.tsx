@@ -38,7 +38,7 @@ export default function ContactPage() {
           <h1 className="font-serif text-5xl text-wood-900 mb-6">Get in Touch</h1>
           <div className="h-1 w-24 bg-terracotta-500 mx-auto rounded-full mb-8"></div>
           <p className="text-xl text-wood-700 leading-relaxed">
-            We'd love to hear from you. Reach out for bookings, collaborations, or just to say hello.
+            Let&apos;s start a conversation about your perfect farm stay. for bookings, collaborations, or just to say hello.
           </p>
         </div>
 
