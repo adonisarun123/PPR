@@ -12,7 +12,7 @@ import {
   Users,
 } from 'lucide-react';
 import Countdown from '@/components/invite/Countdown';
-import { whatsappLink } from '@/lib/constants';
+import { whatsappLink, rsvpWhatsappNumber } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: "You're Invited | Paws Pannai Retreat Launch — 10 October 2026",
@@ -28,6 +28,7 @@ export const metadata: Metadata = {
 
 const rsvpLink = whatsappLink(
   "Hi! I'd like to RSVP for the Paws Pannai launch on 10 October 2026.\n\nMy name:\nNumber of people:\nNumber of dogs:\nDog's name(s):",
+  rsvpWhatsappNumber,
 );
 
 const details = [
