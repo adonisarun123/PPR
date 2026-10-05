@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { contactNumber, contactNumberDisplay } from '@/lib/constants';
 import { PawPrint, Mail, MapPin, Phone, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
@@ -71,7 +72,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-terracotta-500" />
-                <span>+91-98765-43210</span>
+                <a href={`tel:+${contactNumber}`} className="hover:text-terracotta-500 transition-colors">{contactNumberDisplay}</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-terracotta-500" />

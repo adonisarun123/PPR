@@ -22,11 +22,15 @@ export const headerLinks = [
 
 
 
-// WhatsApp number used for enquiries and launch RSVPs (country code, no +)
-export const whatsappNumber = '919717334639';
+// Main contact number — phone + WhatsApp enquiries (country code, no +)
+export const contactNumber = '919845860005';
+export const contactNumberDisplay = '+91 98458 60005';
 
-export const whatsappLink = (message: string) =>
-  `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+// Invite page RSVPs only (country code, no +)
+export const rsvpWhatsappNumber = '919717334639';
+
+export const whatsappLink = (message: string, number: string = contactNumber) =>
+  `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 
 // Introductory pricing — all rates are per hour
 export const dogPricing = [
