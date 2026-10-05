@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 
-// 10 October 2026, 00:00 IST
-const TARGET = new Date('2026-10-10T00:00:00+05:30').getTime();
+// 10 October 2026, 3:00 PM IST (event start)
+const TARGET = new Date('2026-10-10T15:00:00+05:30').getTime();
 
 function diff() {
   const ms = Math.max(0, TARGET - Date.now());
