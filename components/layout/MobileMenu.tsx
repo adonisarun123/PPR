@@ -19,7 +19,7 @@ export default function MobileMenu() {
         {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
       </button>
       {open ? (
-        <div className="absolute left-0 right-0 top-16 bg-earth-50 border-t border-sand-200 shadow-md">
+        <div className="absolute left-0 right-0 top-16 bg-earth-50 text-sand-900 border-t border-sand-200 shadow-md">
           <div className="px-4 py-4 space-y-2">
             {navLinks.map((link) => (
               <Link

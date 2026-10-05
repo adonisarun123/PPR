@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import JsonLd from '@/components/shared/JsonLd';
+import WhatsAppButton from '@/components/shared/WhatsAppButton';
 import { siteName } from '@/lib/constants';
 
 const inter = Inter({
@@ -76,6 +77,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppButton />
 
         {process.env.NEXT_PUBLIC_GA_ID ? (
           <>
