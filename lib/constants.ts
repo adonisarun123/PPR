@@ -23,8 +23,8 @@ export const headerLinks = [
 
 
 // Main contact number — phone + WhatsApp enquiries (country code, no +)
-export const contactNumber = '919845860005';
-export const contactNumberDisplay = '+91 98458 60005';
+export const contactNumber = '917795207779';
+export const contactNumberDisplay = '+91 77952 07779';
 
 // Invite page RSVPs only (country code, no +)
 export const rsvpWhatsappNumber = '919717334639';
