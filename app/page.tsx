@@ -1,6 +1,7 @@
 import Hero from '@/components/home/Hero';
 import Features from '@/components/home/Features';
 import PetPlayArea from '@/components/home/PetPlayArea';
+import PricingSection from '@/components/home/PricingSection';
 import PropertyHighlights from '@/components/home/PropertyHighlights';
 import PetFriendlySection from '@/components/home/PetFriendlySection';
 import SustainabilitySection from '@/components/home/SustainabilitySection';
@@ -68,6 +69,10 @@ export default function HomePage() {
         {/* Activity First Design */}
         <FadeIn>
           <PetPlayArea />
+        </FadeIn>
+
+        <FadeIn>
+          <PricingSection />
         </FadeIn>
 
         <section className="py-20 bg-stone-50/50">
