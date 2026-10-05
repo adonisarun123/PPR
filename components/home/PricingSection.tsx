@@ -91,7 +91,7 @@ export default function PricingSection() {
           <div className="mt-5 flex items-start gap-3 rounded-2xl border border-dashed border-terracotta-300 bg-terracotta-50 p-4 text-wood-800">
             <UserCheck className="mt-0.5 h-5 w-5 shrink-0 text-terracotta-600" />
             <p>
-              <span className="font-semibold">1 accompanying person per dog is complimentary.</span>{' '}
+              <span className="font-semibold">1 accompanying person per dog is complimentary</span> — adult or child, any age.{' '}
               Additional visitors are charged at the rates above.
             </p>
           </div>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
   openGraph: {
     title: "You're Invited — Paws Pannai Retreat Launch",
-    description: 'Saturday, 10 October 2026 · Invite-only · Food included',
+    description: 'Saturday, 10 October 2026 · 3–6 PM · Invite-only · Food included',
     type: 'website',
   },
 };
@@ -32,7 +32,7 @@ const rsvpLink = whatsappLink(
 
 const details = [
   { icon: CalendarDays, label: 'Date', value: 'Saturday, 10 October 2026' },
-  { icon: Clock, label: 'Time', value: 'Shared on RSVP' },
+  { icon: Clock, label: 'Time', value: '3:00 PM – 6:00 PM' },
   { icon: MapPin, label: 'Venue', value: 'Paws Pannai Retreat, near Shoolagiri, Tamil Nadu' },
   { icon: UtensilsCrossed, label: 'Food', value: 'Included for all invited guests' },
 ];
@@ -93,6 +93,10 @@ export default function InvitePage() {
           <div className="mb-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-wood-100 sm:text-lg">
             <span className="inline-flex items-center gap-2">
               <CalendarDays className="h-5 w-5 text-terracotta-400" /> Saturday, 10 October 2026
+            </span>
+            <span className="hidden text-wood-400 sm:inline">•</span>
+            <span className="inline-flex items-center gap-2">
+              <Clock className="h-5 w-5 text-terracotta-400" /> 3 PM – 6 PM
             </span>
             <span className="hidden text-wood-400 sm:inline">•</span>
             <span className="inline-flex items-center gap-2">
@@ -168,7 +172,7 @@ export default function InvitePage() {
           <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-terracotta-600/20 blur-3xl" />
           <div className="relative mx-auto max-w-2xl">
             <div className="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-terracotta-300">
-              <Lock className="h-3.5 w-3.5" /> Invite only · 10.10.2026
+              <Lock className="h-3.5 w-3.5" /> Invite only · 10.10.2026 · 3–6 PM
             </div>
             <h2 className="mb-4 font-serif text-3xl sm:text-4xl">Save your spot</h2>
             <p className="mb-8 text-wood-200">

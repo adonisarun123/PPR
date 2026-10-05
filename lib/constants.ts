@@ -23,7 +23,7 @@ export const headerLinks = [
 
 
 // WhatsApp number used for enquiries and launch RSVPs (country code, no +)
-export const whatsappNumber = '919845860005';
+export const whatsappNumber = '919717334639';
 
 export const whatsappLink = (message: string) =>
   `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
